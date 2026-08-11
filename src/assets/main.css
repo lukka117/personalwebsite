@@ -138,15 +138,14 @@ body.light-theme #work-location { color: #000 !important; }
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2vw 2vw 0;
+  padding: 1.2vw 2vw;
   background: transparent;
-  transition: background 0.3s ease, box-shadow 0.3s ease;
+  transition: background 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
 }
 #navbar.navbar-solid {
   background: rgb(255 255 255 / 0.92);
   backdrop-filter: blur(12px);
   box-shadow: 0 4px 20px rgb(0 0 0 / 0.08);
-  padding-bottom: 1.2vw;
 }
 body.dark-theme #navbar.navbar-solid {
   background: rgb(26 26 26 / 0.94);
@@ -186,8 +185,8 @@ body.dark-theme #navbar.navbar-solid {
 #difference-link:hover::after,
 #me-difference-link:hover::after { width: 100%; }
 #theme-toggle-btn {
-  width: 0.7vw;
-  height: 0.7vw;
+  width: 0.5vw;
+  height: 0.5vw;
   min-width: 8px;
   min-height: 8px;
   margin-left: 0.5vw;
