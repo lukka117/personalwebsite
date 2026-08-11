@@ -30,7 +30,7 @@ import { socials } from '@/data/socials'
       Check out<br />my previous<br />projects<br />
     </div>
     <div id="send-form-button">
-      <RouterLink class="liquid-glass liquid-glass--pill glass-btn" to="/projects">
+      <RouterLink to="/projects">
         Check out full list here!
       </RouterLink>
     </div>

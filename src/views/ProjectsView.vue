@@ -26,7 +26,7 @@ import CodeProjectCard from '@/components/projects/CodeProjectCard.vue'
       Are you Ready<br />to embark<br />a new project?<br />
     </div>
     <div id="send-form-button">
-      <RouterLink class="liquid-glass liquid-glass--pill glass-btn" to="/contact">
+      <RouterLink to="/contact">
         Let's make it happen
       </RouterLink>
     </div>

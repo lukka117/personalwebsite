@@ -76,7 +76,7 @@ import MarqueeBand from '@/components/shared/MarqueeBand.vue'
     />
     <Reveal variant="fade" :delay="160">
       <div id="send-form-button">
-        <RouterLink class="liquid-glass liquid-glass--pill glass-btn" to="/contact">
+        <RouterLink to="/contact">
           Let's make it happen
         </RouterLink>
       </div>
