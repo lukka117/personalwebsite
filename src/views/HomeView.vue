@@ -1,8 +1,9 @@
 <script setup>
-import { featuredHomeProjects, methodologyItems } from '@/data/projects'
+import { featuredHomeProjects, featuredCreativeWorks, methodologyItems } from '@/data/projects'
 import { homeCopy } from '@/data/profile'
 import Reveal from '@/components/motion/Reveal.vue'
 import CodeProjectCard from '@/components/projects/CodeProjectCard.vue'
+import VisualWorksSection from '@/components/projects/VisualWorksSection.vue'
 import SplitLines from '@/components/motion/SplitLines.vue'
 import MarqueeBand from '@/components/shared/MarqueeBand.vue'
 </script>
@@ -36,6 +37,8 @@ import MarqueeBand from '@/components/shared/MarqueeBand.vue'
         />
       </div>
     </section>
+
+    <VisualWorksSection compact :works="featuredCreativeWorks" />
 
     <section>
       <template v-for="(item, index) in methodologyItems" :key="item.number">

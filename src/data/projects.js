@@ -54,6 +54,57 @@ const ready = true
   },
 ]
 
+/**
+ * Non-code / visual work (brand, motion, packaging). Secondary to code builds.
+ */
+export const creativeWorks = [
+  {
+    id: 'cw-01',
+    title: 'Solary',
+    category: 'Brand & packaging',
+    year: '2024',
+    description: 'Visual identity and packaging exploration for a solar-forward product line.',
+    image: '/assets/solary/finale-frames/solary-packaging1.jpg',
+    featured: true,
+  },
+  {
+    id: 'cw-02',
+    title: 'Kapterid',
+    category: 'Motion & identity',
+    year: '2024',
+    description: 'Brand frames and motion sequences for a concept identity system.',
+    image: '/assets/kapterid/stationarykhapter.webp',
+    featured: true,
+  },
+  {
+    id: 'cw-03',
+    title: 'The Stranding',
+    category: 'Film stills',
+    year: '2023',
+    description: 'Still selection from a short narrative / footage edit.',
+    image: '/assets/thestrandingimg.jpg',
+    featured: true,
+  },
+  {
+    id: 'cw-04',
+    title: 'Monster',
+    category: 'Campaign visual',
+    year: '2023',
+    description: 'Energy-branded visual treatment used as a campaign still.',
+    image: '/assets/monster1.webp',
+    featured: false,
+  },
+  {
+    id: 'cw-05',
+    title: 'Cudi Cast',
+    category: 'Editorial / motion',
+    year: '2023',
+    description: 'Editorial motion piece and still from a music-led visual series.',
+    image: '/assets/cudi1.webp',
+    featured: false,
+  },
+]
+
 export const methodologyItems = [
   {
     number: '1.1',
@@ -73,4 +124,5 @@ export const methodologyItems = [
 ]
 
 export const featuredHomeProjects = projects.filter((p) => p.featured)
+export const featuredCreativeWorks = creativeWorks.filter((w) => w.featured)
 export const projectsByYear = {}

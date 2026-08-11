@@ -465,6 +465,90 @@ body.light-theme .code-card__snippet {
   color: #333;
 }
 
+/* ——— Visual / non-code works (secondary) ——— */
+.visual-works {
+  padding: 5vw 2vw 2vw;
+  margin-top: 2vw;
+  border-top: 1px solid var(--color-line);
+}
+.visual-works--compact {
+  padding-top: 3vw;
+  margin-top: 0;
+  border-top: none;
+}
+.visual-works__head { margin-bottom: 1.75vw; max-width: 36rem; }
+.visual-works__title {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.15rem, 2.2vw, 1.65rem);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  color: var(--color-muted);
+}
+.visual-works__lead {
+  margin: 0;
+  font-size: var(--text-sm);
+  line-height: 1.5;
+  color: var(--color-muted);
+  opacity: 0.9;
+}
+.visual-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25vw;
+}
+.visual-card { min-width: 0; }
+.visual-card__media {
+  overflow: hidden;
+  border-radius: 0.75rem;
+  border: 1px solid var(--color-panel-border);
+  background: var(--color-panel);
+  aspect-ratio: 4 / 3;
+}
+.visual-card__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s var(--ease-out);
+}
+.visual-card:hover .visual-card__img { transform: scale(1.03); }
+.visual-card__meta { padding: 0.85rem 0.15rem 0; }
+.visual-card__row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+.visual-card__title {
+  margin: 0;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+.visual-card__year {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  flex-shrink: 0;
+}
+.visual-card__category {
+  margin: 0.25rem 0 0;
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+.visual-card__desc {
+  margin: 0.45rem 0 0;
+  font-size: var(--text-xs);
+  line-height: 1.45;
+  color: var(--color-muted);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+.visual-card:hover .visual-card__desc {
+  opacity: 0.5;
+  pointer-events: auto;
+}
+
 /* ——— Contact ——— */
 .contact-page { padding: 4vw 2vw 6vw; }
 .contact-page__intro { max-width: 42rem; margin-bottom: 3vw; }
@@ -578,6 +662,15 @@ body.dark-theme .liquid-glass {
   .me-difference-section,
   #me-box { max-width: 100%; flex: 1 1 100%; }
   .about-hero-flex { flex-direction: column; }
+  .visual-grid { grid-template-columns: 1fr 1fr; gap: 1rem; }
+}
+
+@media (max-width: 600px) {
+  .visual-grid { grid-template-columns: 1fr; }
+  .visual-card__desc {
+    opacity: 0.5;
+    pointer-events: auto;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

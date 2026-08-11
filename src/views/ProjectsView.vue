@@ -1,6 +1,7 @@
 <script setup>
-import { projects } from '@/data/projects'
+import { projects, creativeWorks } from '@/data/projects'
 import CodeProjectCard from '@/components/projects/CodeProjectCard.vue'
+import VisualWorksSection from '@/components/projects/VisualWorksSection.vue'
 </script>
 
 <template>
@@ -21,6 +22,8 @@ import CodeProjectCard from '@/components/projects/CodeProjectCard.vue'
         :index="index"
       />
     </div>
+
+    <VisualWorksSection :works="creativeWorks" />
 
     <div id="form-header">
       Are you Ready<br />to embark<br />a new project?<br />
