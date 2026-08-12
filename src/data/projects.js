@@ -4,7 +4,7 @@
 export const projects = [
   {
     id: '01',
-    title: 'Solary — Philips concept landing',
+    title: 'Solary - Philips concept landing',
     stack: ['React', 'Three.js', 'JSX'],
     image: '/assets/solary/finale-frames/solary-packaging1.jpg',
     description:
