@@ -14,8 +14,8 @@ let safetyId = null
 onMounted(() => {
   // Never leave the app stuck behind the loader
   safetyId = setTimeout(() => {
-    hidden.value = true
     markReady()
+    hidden.value = true
     displayNone.value = true
   }, 5000)
 
@@ -72,15 +72,18 @@ onMounted(() => {
       clearInterval(intervalId)
       intervalId = null
       setTimeout(() => {
-        hidden.value = true
+        // Paint content under the loader before the wipe, so there's no second fade
         markReady()
-        if (safetyId) {
-          clearTimeout(safetyId)
-          safetyId = null
-        }
-        setTimeout(() => {
-          displayNone.value = true
-        }, 900)
+        requestAnimationFrame(() => {
+          hidden.value = true
+          if (safetyId) {
+            clearTimeout(safetyId)
+            safetyId = null
+          }
+          setTimeout(() => {
+            displayNone.value = true
+          }, 1000)
+        })
       }, 280)
     }
   }, 20)

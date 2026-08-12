@@ -8,7 +8,7 @@ import { socials } from '@/data/socials'
       <p class="dev-page__eyebrow">Contact</p>
       <h1 class="contact-page__title">Get in touch</h1>
       <p class="contact-page__lead">
-        Email or socials - the fastest ways to reach me for projects and collabs.
+        Want something in the showroom next - or a build together? Email and socials are the fastest ways in.
       </p>
     </header>
 

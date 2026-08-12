@@ -20,7 +20,10 @@ const showHeroName = computed(() => isReady.value && route.meta.showHeroName ===
       <HeroName v-if="showHeroName" :replay-key="route.path" />
     </Transition>
 
-    <main class="main-content" :class="{ 'app-intro': isReady }">
+    <main
+      class="main-content"
+      :class="{ 'app-intro': isReady, 'main-content--no-hero': !showHeroName }"
+    >
       <RouterView v-slot="{ Component, route: currentRoute }">
         <Transition name="page" mode="out-in">
           <component :is="Component" :key="currentRoute.path" />

@@ -26,7 +26,7 @@ import MarqueeBand from '@/components/shared/MarqueeBand.vue'
     <section class="home-code">
       <div class="home-code__head">
         <p class="dev-page__eyebrow">Selected builds</p>
-        <RouterLink class="code-pill code-pill--action" to="/projects">All projects</RouterLink>
+        <RouterLink class="code-pill code-pill--action" to="/projects">Full showroom</RouterLink>
       </div>
       <div class="code-grid">
         <CodeProjectCard

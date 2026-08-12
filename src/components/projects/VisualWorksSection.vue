@@ -23,7 +23,7 @@ defineProps({
           {{ compact ? 'Visual & brand' : 'Visual & brand work' }}
         </h2>
         <p v-if="!compact" class="visual-works__lead">
-          Selected pieces outside pure code - brand, motion, and stills. Coding stays the focus; this is the wider craft.
+          Side gallery - brand, motion, and stills that sit next to the code floor. Coding is the focus; this is the wider craft on display.
         </p>
       </div>
     </header>

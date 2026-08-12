@@ -10,7 +10,13 @@ import { aboutCopy } from '@/data/profile'
           <div id="imgs-box">
             <div class="media-style-container">
               <div class="media-text-container">
-                <img class="media-style-2" src="/assets/me.webp" alt="Me picture" />
+                <div class="about-media">
+                  <img
+                    class="media-style-2"
+                    src="/assets/me.webp"
+                    alt="Lukka117 portrait"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -45,7 +51,9 @@ import { aboutCopy } from '@/data/profile'
           style="padding: 0vw 2vw 0 2vw; margin-left: auto; margin-right: 0; max-width: 65%; margin-bottom: 5vw"
         >
           <div class="right-text-container">
-            <img class="media-style-2" src="/assets/solary/solary3.gif" alt="Frontend / product still" />
+            <div class="about-media">
+              <img class="media-style-2" src="/assets/solary/solary3.gif" alt="Solary visual still" />
+            </div>
           </div>
         </div>
 
@@ -67,7 +75,9 @@ import { aboutCopy } from '@/data/profile'
           <div id="imgs-box">
             <div class="media-style-container">
               <div class="media-text-container">
-                <img class="media-style-2" src="/assets/monster1.webp" alt="Project still" />
+                <div class="about-media">
+                  <img class="media-style-2" src="/assets/monster1.webp" alt="Campaign still" />
+                </div>
               </div>
             </div>
           </div>

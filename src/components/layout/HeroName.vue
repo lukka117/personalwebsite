@@ -15,9 +15,10 @@ defineProps({
     class="hero-name"
     aria-hidden="true"
   >
-    <span class="hero-name__mask">
-      <span class="hero-name__ghost" aria-hidden="true">Lukka117</span>
-      <span class="hero-name__text">Lukka117</span>
-    </span>
+    <div class="hero-name__mask">
+      <div class="hero-name__track">
+        <span v-for="n in 8" :key="n" class="hero-name__item">Lukka117</span>
+      </div>
+    </div>
   </section>
 </template>
