@@ -35,7 +35,7 @@ defineProps({
             :href="project.demo"
             target="_blank"
             rel="noopener noreferrer"
-          >↗ Live demo</a>
+          >Demo</a>
           <a
             v-if="project.repo"
             class="code-pill code-pill--action"
@@ -44,7 +44,7 @@ defineProps({
             rel="noopener noreferrer"
           >Repo</a>
           <span v-if="!project.demo && !project.repo" class="code-card__hint">
-            Links coming soon
+            No links yet
           </span>
         </div>
       </div>

@@ -25,7 +25,7 @@ function isActive(path) {
     <header>
       <nav id="navbar" :class="{ 'navbar-solid': scrolled }" aria-label="Main navigation">
         <RouterLink id="navbar-brand" class="ds-nav" to="/">
-          My name's Lukka117
+          My name is lukkafz
         </RouterLink>
 
         <div class="page-element-pages-shortcut">

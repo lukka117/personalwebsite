@@ -6,25 +6,25 @@ export const socials = [
   {
     id: 'linkedin',
     label: 'LinkedIn',
-    handle: 'lukka117',
+    handle: 'lukkafz',
     href: '#', // TODO: LinkedIn URL
   },
   {
     id: 'instagram',
     label: 'Instagram',
-    handle: '@lukka117',
+    handle: '@lukkafz',
     href: '#', // TODO: Instagram URL
   },
   {
     id: 'behance',
     label: 'Behance',
-    handle: 'lukka117',
+    handle: 'lukkafz',
     href: '#', // TODO: Behance URL
   },
   {
     id: 'email',
     label: 'Email',
-    handle: 'hello@lukka117.com',
-    href: 'mailto:hello@lukka117.com', // TODO: email address
+    handle: 'hello@lukkafz.com',
+    href: 'mailto:hello@lukkafz.com', // TODO: email address
   },
 ]

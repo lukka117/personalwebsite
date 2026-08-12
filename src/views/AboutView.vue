@@ -14,7 +14,7 @@ import { aboutCopy } from '@/data/profile'
                   <img
                     class="media-style-2"
                     src="/assets/me.webp"
-                    alt="Lukka117 portrait"
+                    alt="lukkafz portrait"
                   />
                 </div>
               </div>

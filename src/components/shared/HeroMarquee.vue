@@ -16,6 +16,6 @@ const showHeroName = computed(() => route.meta.showHeroName === true)
     :visible="{ opacity: 0.06, y: -30, transition: { duration: 2000 } }"
     v-motion-visible
   >
-    Lukka117
+    lukkafz
   </div>
 </template>

@@ -8,7 +8,7 @@ export const projects = [
     stack: ['React', 'Three.js', 'JSX'],
     image: '/assets/solary/finale-frames/solary-packaging1.jpg',
     description:
-      'Landing page for a fictional Philips wall lamp. 3D model built in Cinema 4D, loaded and lit in Three.js inside a React app. Scroll-driven camera, product configurator, and a product-marketing layout built around the geometry.',
+      'Landing for a fictional Philips wall lamp. Cinema 4D model in Three.js, React UI, scroll-linked camera.',
     year: '2025',
     slug: null,
     repo: null,
@@ -54,7 +54,7 @@ export function useLampScene(canvasRef) {
     stack: ['Vue.js', 'JavaScript', 'OpenAI API'],
     image: '/assets/gradient.webp',
     description:
-      'Drop up to 5 product URLs and get a structured side-by-side breakdown: materials, colorways, sizing, pricing, and more. o4-mini fetches and reasons over each page, then returns a clean comparison table. Built with Vue 3 and a direct OpenAI API call — no backend.',
+      'Paste up to 5 product URLs and get a side-by-side comparison (materials, colors, price, etc.) via o4-mini. Vue 3, OpenAI API, no backend.',
     year: '2025',
     slug: null,
     repo: null,
@@ -104,8 +104,7 @@ Return a JSON array, one object per product.\`
     id: '03',
     title: 'Coming soon',
     stack: ['Vue.js', 'JavaScript'],
-    description:
-      'Third slot — reserved for the next build.',
+    description: 'Next project - TBD.',
     year: '2026',
     slug: null,
     repo: null,
@@ -131,8 +130,7 @@ export const creativeWorks = [
     title: 'Solary',
     category: 'Brand & packaging',
     year: '2024',
-    description:
-      'Identity and packaging system for a solar-forward line - materials, hierarchy, and shelf presence.',
+    description: 'Identity and packaging for a fictional product line.',
     image: '/assets/solary/finale-frames/solary-packaging1.jpg',
     featured: true,
   },
@@ -141,8 +139,7 @@ export const creativeWorks = [
     title: 'Kapterid',
     category: 'Motion & identity',
     year: '2024',
-    description:
-      'Concept branding with motion frames - mark, rhythm, and a system that can move on screen.',
+    description: 'Concept branding with motion frames.',
     image: '/assets/kapterid/stationarykhapter.webp',
     featured: true,
   },
@@ -151,8 +148,7 @@ export const creativeWorks = [
     title: 'The Stranding',
     category: 'Film stills',
     year: '2023',
-    description:
-      'Still selection from a short narrative edit - atmosphere, framing, and pacing in a single frame.',
+    description: 'Stills from a short video edit.',
     image: '/assets/thestrandingimg.jpg',
     featured: true,
   },
@@ -161,8 +157,7 @@ export const creativeWorks = [
     title: 'Monster',
     category: 'Campaign visual',
     year: '2023',
-    description:
-      'High-energy campaign treatment - color, type, and impact built for quick recognition.',
+    description: 'Campaign still for an energy brand treatment.',
     image: '/assets/monster1.webp',
     featured: false,
   },
@@ -171,8 +166,7 @@ export const creativeWorks = [
     title: 'Cudi Cast',
     category: 'Editorial / motion',
     year: '2023',
-    description:
-      'Music-led editorial series - stills and motion that carry tone without over-explaining.',
+    description: 'Editorial stills and motion for a music series.',
     image: '/assets/cudi1.webp',
     featured: false,
   },
@@ -182,17 +176,17 @@ export const methodologyItems = [
   {
     number: '1.1',
     title: 'Research & UX',
-    text: 'Before code: map users, goals, and constraints. Wireframes and UI decisions land first so the frontend has a clear job - screens, flows, and empty states included.',
+    text: 'Map users and constraints first. Decide the UI before writing much code.',
   },
   {
     number: '1.2',
-    title: 'Frontend systems',
-    text: 'JavaScript, React, and Vue.js - components, state, and interfaces built to stay maintainable. Prefer patterns you can open months later and still understand.',
+    title: 'Frontend',
+    text: 'JavaScript, React, Vue - components and state kept simple enough to reopen later.',
   },
   {
     number: '1.3',
-    title: 'Polish & ship',
-    text: 'Detail work on interaction, spacing, and accessibility. Then ship - demos, snippets, and repos that show how the thing actually runs, not just how it looks in a mock.',
+    title: 'Finish',
+    text: 'Tighten interaction and accessibility, then ship something you can actually open.',
   },
 ]
 

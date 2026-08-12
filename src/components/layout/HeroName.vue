@@ -17,7 +17,7 @@ defineProps({
   >
     <div class="hero-name__mask">
       <div class="hero-name__track">
-        <span v-for="n in 8" :key="n" class="hero-name__item">Lukka117</span>
+        <span v-for="n in 8" :key="n" class="hero-name__item">lukkafz</span>
       </div>
     </div>
   </section>

@@ -10,7 +10,7 @@ export function useTheme() {
     attribute: 'class',
     valueDark: 'dark',
     valueLight: '',
-    storageKey: 'lukka117-theme-v2',
+    storageKey: 'lukkafz-theme-v2',
     initialValue: 'dark',
   })
 

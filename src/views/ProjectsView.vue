@@ -7,10 +7,10 @@ import VisualWorksSection from '@/components/projects/VisualWorksSection.vue'
 <template>
   <div class="dev-page">
     <header class="dev-page__intro">
-      <p class="dev-page__eyebrow">Showroom</p>
-      <h1 class="dev-page__title">Code builds</h1>
+      <p class="dev-page__eyebrow">Projects</p>
+      <h1 class="dev-page__title">Code</h1>
       <p class="dev-page__lead">
-        The main floor - frontend work in JavaScript, React, and Vue.js. Slots below are ready for live repos, demos, and snippets.
+        Frontend projects in JavaScript, React, and Vue.
       </p>
     </header>
 

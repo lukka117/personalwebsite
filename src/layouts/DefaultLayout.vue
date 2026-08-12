@@ -37,10 +37,10 @@ const showHeroName = computed(() => isReady.value && route.meta.showHeroName ===
       :class="{ 'app-intro': isReady }"
       aria-hidden="true"
     >
-      Lukka117
+      lukkafz
     </section>
     <div class="copyright-styles" :class="{ 'app-intro': isReady }">
-      © Lukka117 Industries. All rights reserved.
+      © lukkafz. All rights reserved.
     </div>
   </div>
 </template>

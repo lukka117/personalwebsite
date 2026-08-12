@@ -4,28 +4,27 @@
 export const profile = {
   role: 'Junior Frontend Developer',
   stack: 'JavaScript · React · Vue.js',
-  focus: 'UX/UI & product interfaces',
-  /** One-line for meta / short bios */
+  focus: 'UX/UI',
   tagline:
-    'Junior Frontend Developer | JavaScript · React · Vue.js | UX/UI - showroom of code and visual work by Lukka117.',
+    'Junior Frontend Developer | JavaScript · React · Vue.js | UX/UI - lukkafz',
 }
 
 export const homeCopy = {
-  leadLabel: 'The showroom →',
+  leadLabel: 'Work →',
   leadTitle:
-    'Frontend interfaces I build and ship - React and Vue first - plus the brand and motion work that trained how I see layout, rhythm, and product.',
-  frameLabel: 'How I work →',
+    'Frontend work in React and Vue, with some brand and motion projects from earlier.',
+  frameLabel: 'Approach →',
   frameTitle:
-    'Brief, research, UI, then code. Clear components, honest interaction, and interfaces that stay readable when the project grows.',
+    'Figure out the problem, design the UI, then build it so it stays easy to change.',
 }
 
 export const aboutCopy = {
   about:
-    'Junior Frontend Developer between Biella and Brescia. This showroom collects frontend builds up front - JavaScript, React, Vue - and the visual pieces that still inform how I design screens.',
+    'Junior Frontend Developer based in Biella and Brescia. Mostly React and Vue, plus older visual work when it still fits.',
   craft:
-    'Day to day I shape product UI: flows, components, and states in React and Vue, with UX/UI decisions made before the first commit. Earlier brand, packaging, and motion work sits here too - not as a side hustle pitch, but as proof of eye for hierarchy, type, and motion.',
+    'I build interfaces - flows, components, state. Brand and motion work from before is here too, mainly as context for how I look at layout and type.',
   process:
-    'I start with the problem and the people using it. Map flows, sketch the UI, then prototype in code. Polish interaction, accessibility, and structure until the interface feels calm to use and easy to extend.',
+    'Start with the user and the problem. Sketch the UI, then build in code. Clean up interaction and structure before calling it done.',
   belief:
-    'Junior in title, serious about craft. A portfolio should show what you actually make - usable interfaces, maintainable frontend, and visuals that still hold up on a second look.',
+    'Show the work. Keep the frontend readable. Prefer clear screens over clever ones.',
 }

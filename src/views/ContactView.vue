@@ -6,9 +6,9 @@ import { socials } from '@/data/socials'
   <div class="contact-page">
     <header class="contact-page__intro">
       <p class="dev-page__eyebrow">Contact</p>
-      <h1 class="contact-page__title">Get in touch</h1>
+      <h1 class="contact-page__title">Say hi</h1>
       <p class="contact-page__lead">
-        Want something in the showroom next - or a build together? Email and socials are the fastest ways in.
+        Email or socials - whichever is easier.
       </p>
     </header>
 

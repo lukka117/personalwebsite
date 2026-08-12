@@ -2,7 +2,7 @@
 defineProps({
   text: {
     type: String,
-    default: "Let's work together",
+    default: 'Open to work',
   },
 })
 </script>

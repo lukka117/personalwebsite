@@ -10,13 +10,13 @@ const displayNone = ref(false)
 
 let intervalId = null
 let safetyId = null
+let exitTimer = null
+let removeTimer = null
 
 onMounted(() => {
-  // Never leave the app stuck behind the loader
   safetyId = setTimeout(() => {
-    markReady()
-    hidden.value = true
-    displayNone.value = true
+    progress.value = 100
+    finish()
   }, 5000)
 
   const minDuration = 1200
@@ -71,27 +71,38 @@ onMounted(() => {
     if (value >= 100) {
       clearInterval(intervalId)
       intervalId = null
-      setTimeout(() => {
-        // Paint content under the loader before the wipe, so there's no second fade
-        markReady()
-        requestAnimationFrame(() => {
-          hidden.value = true
-          if (safetyId) {
-            clearTimeout(safetyId)
-            safetyId = null
-          }
-          setTimeout(() => {
-            displayNone.value = true
-          }, 1000)
-        })
-      }, 280)
+      finish()
     }
   }, 20)
 })
 
+function finish() {
+  if (intervalId) {
+    clearInterval(intervalId)
+    intervalId = null
+  }
+  if (safetyId) {
+    clearTimeout(safetyId)
+    safetyId = null
+  }
+  if (exitTimer) return
+
+  exitTimer = setTimeout(() => {
+    markReady()
+    requestAnimationFrame(() => {
+      hidden.value = true
+      removeTimer = setTimeout(() => {
+        displayNone.value = true
+      }, 1000)
+    })
+  }, 280)
+}
+
 onBeforeUnmount(() => {
   if (intervalId) clearInterval(intervalId)
   if (safetyId) clearTimeout(safetyId)
+  if (exitTimer) clearTimeout(exitTimer)
+  if (removeTimer) clearTimeout(removeTimer)
 })
 </script>
 
@@ -106,14 +117,8 @@ onBeforeUnmount(() => {
       <div id="loading-bar" :style="{ width: `${progress}%` }" />
     </div>
 
-    <div
-      id="percentage-counter"
-      :style="{ opacity: 0.7 + 0.3 * (progress / 100) }"
-    >
-      <span
-        v-for="(digit, i) in String(progress).split('')"
-        :key="`${progress}-${i}`"
-      >{{ digit }}</span>
+    <div id="percentage-counter">
+      <span>{{ progress }}</span>
     </div>
   </div>
 </template>
