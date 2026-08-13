@@ -2,6 +2,7 @@
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import NavBar from '@/components/layout/NavBar.vue'
+import Footer from '@/components/layout/Footer.vue'
 import Preloader from '@/components/shared/Preloader.vue'
 import HeroName from '@/components/layout/HeroName.vue'
 import { useAppReady } from '@/composables/useAppReady'
@@ -31,16 +32,6 @@ const showHeroName = computed(() => isReady.value && route.meta.showHeroName ===
       </RouterView>
     </main>
 
-    <section
-      id="say-my-name-bottom"
-      class="outro-name"
-      :class="{ 'app-intro': isReady }"
-      aria-hidden="true"
-    >
-      lukkafz
-    </section>
-    <div class="copyright-styles" :class="{ 'app-intro': isReady }">
-      © lukkafz. All rights reserved.
-    </div>
+    <Footer />
   </div>
 </template>

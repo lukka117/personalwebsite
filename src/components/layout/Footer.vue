@@ -1,13 +1,21 @@
 <script setup>
-import Container from '@/components/base/Container.vue'
+import { useAppReady } from '@/composables/useAppReady'
+
+const { isReady } = useAppReady()
 </script>
 
 <template>
-  <footer class="mt-[var(--spacing-section)] pb-6">
-    <Container>
-      <p class="text-center text-sm font-light text-muted">
-        © lukkafz. All rights reserved.
-      </p>
-    </Container>
+  <footer>
+    <section
+      id="say-my-name-bottom"
+      class="outro-name"
+      :class="{ 'app-intro': isReady }"
+      aria-hidden="true"
+    >
+      lukkafz
+    </section>
+    <div class="copyright-styles" :class="{ 'app-intro': isReady }">
+      © lukkafz. Please don't copy my aka cuz I kinda like it :D.
+    </div>
   </footer>
 </template>
