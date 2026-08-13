@@ -8,7 +8,7 @@ import { socials } from '@/data/socials'
       <p class="dev-page__eyebrow">Contact</p>
       <h1 class="contact-page__title">Say hi</h1>
       <p class="contact-page__lead">
-        LinkedIn, GitHub, or email — whichever is easier.
+        LinkedIn, GitHub, or email - whichever is easier.
       </p>
     </header>
 

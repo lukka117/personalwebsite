@@ -1,11 +1,11 @@
 /**
- * Contact links — LinkedIn, GitHub, email.
+ * Contact links - LinkedIn, GitHub, email.
  */
 export const socials = [
   {
     id: 'linkedin',
     label: 'LinkedIn',
-    handle: 'lukkafz',
+    handle: 'www.linkedin.com/lucafrezzato',
     href: 'https://www.linkedin.com/in/lukkafz',
   },
   {
@@ -17,7 +17,7 @@ export const socials = [
   {
     id: 'email',
     label: 'Email',
-    handle: 'hello@lukkafz.com',
+    handle: 'frezz24bsn@gmail.com',
     href: 'mailto:hello@lukkafz.com',
   },
 ]

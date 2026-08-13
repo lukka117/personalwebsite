@@ -67,7 +67,7 @@ onMounted(async () => {
 
   observer.observe(el)
 
-  // Catch elements already in view — wait 2 frames so initial styles paint first
+  // Catch elements already in view - wait 2 frames so initial styles paint first
   const rect = el.getBoundingClientRect()
   const vh = window.innerHeight || 0
   if (rect.top < vh * 0.94 && rect.bottom > 0) {

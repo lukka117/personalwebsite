@@ -39,7 +39,7 @@
   to { transform: translate3d(-50%, 0, 0); }
 }
 
-/* ——— Theme ——— */
+/* --- Theme --- */
 h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
 
 body {
@@ -79,7 +79,7 @@ body.light-theme #navbar a,
 body.light-theme .pages-shortcut,
 body.light-theme #work-location { color: #000 !important; }
 
-/* ——— Type ——— */
+/* --- Type --- */
 .ds-nav { font-size: var(--text-sm); font-weight: 300; letter-spacing: -0.01em; }
 .ds-label { font-size: var(--text-lg); font-weight: 300; letter-spacing: -0.01em; }
 .ds-body { font-size: var(--text-md); font-weight: 500; line-height: 1.55; letter-spacing: -0.015em; }
@@ -87,7 +87,7 @@ body.light-theme #work-location { color: #000 !important; }
 .ds-title { font-size: var(--text-xl); font-weight: 700; line-height: 1.2; letter-spacing: -0.03em; }
 .ds-mega { font-size: var(--text-2xl); font-weight: 900; line-height: 1; letter-spacing: -0.04em; text-transform: uppercase; }
 
-/* ——— Intro (visible under preloader; wipe reveals — no second fade) ——— */
+/* --- Intro (visible under preloader; wipe reveals - no second fade) --- */
 .main-content,
 .outro-name,
 .copyright-styles {
@@ -113,7 +113,7 @@ body.light-theme #work-location { color: #000 !important; }
   padding-top: 4vw;
 }
 
-/* ——— Preloader ——— */
+/* --- Preloader --- */
 #preloader {
   position: fixed;
   inset: 0;
@@ -140,7 +140,7 @@ body.light-theme #work-location { color: #000 !important; }
   font-variant-numeric: tabular-nums;
 }
 
-/* ——— Navbar ——— */
+/* --- Navbar --- */
 #navbar {
   position: fixed;
   top: 0;
@@ -210,7 +210,7 @@ body.dark-theme #navbar.navbar-solid {
 }
 body.dark-theme #theme-toggle-btn { background: #fff; }
 
-/* ——— Hero ——— */
+/* --- Hero --- */
 #say-my-name-top {
   position: fixed;
   top: 0;
@@ -273,7 +273,7 @@ body.dark-theme #theme-toggle-btn { background: #fff; }
 .hero-name-leave-to { opacity: 0; }
 .hero-name-leave-to { transform: translate3d(0, -1vw, 0); }
 
-/* ——— Layout blocks ——— */
+/* --- Layout blocks --- */
 .difference-section {
   display: flex;
   justify-content: space-between;
@@ -408,7 +408,7 @@ body.dark-theme #send-form-button a:hover {
   color: var(--color-muted);
 }
 
-/* ——— Dev / cards ——— */
+/* --- Dev / cards --- */
 .dev-page { padding: 0 2vw 4vw; }
 .dev-page__intro { max-width: 40rem; margin-bottom: 3vw; }
 .dev-page__eyebrow {
@@ -532,7 +532,7 @@ body.light-theme .code-pill--action:hover { background: rgb(0 0 0 / 0.04); borde
   text-transform: uppercase;
 }
 
-/* ——— Visual / non-code works (secondary) ——— */
+/* --- Visual / non-code works (secondary) --- */
 .visual-works {
   padding: 5vw 2vw 2vw;
   margin-top: 2vw;
@@ -621,7 +621,7 @@ body.light-theme .code-pill--action:hover { background: rgb(0 0 0 / 0.04); borde
   pointer-events: auto;
 }
 
-/* ——— Work detail (gallery) ——— */
+/* --- Work detail (gallery) --- */
 .work-page { padding: 0 0 4vw; }
 .work-page .dev-page__eyebrow { padding: 0 2vw; }
 .work-page .dev-page__eyebrow a {
@@ -679,7 +679,7 @@ body.light-theme .code-pill--action:hover { background: rgb(0 0 0 / 0.04); borde
   pointer-events: auto;
 }
 
-/* ——— Contact ——— */
+/* --- Contact --- */
 .contact-page { padding: 4vw 2vw 6vw; }
 .contact-page__intro { max-width: 42rem; margin-bottom: 3vw; }
 .contact-page__title { margin: 0 0 0.75rem; font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 600; letter-spacing: -0.03em; }
@@ -699,7 +699,7 @@ body.light-theme .code-pill--action:hover { background: rgb(0 0 0 / 0.04); borde
 .contact-channel__label { font-size: var(--text-md); font-weight: 500; }
 .contact-channel__handle { font-size: var(--text-sm); color: var(--color-muted); }
 
-/* ——— Marquee ——— */
+/* --- Marquee --- */
 .marquee-band {
   width: 100%;
   margin-top: 5vw;
@@ -724,7 +724,7 @@ body.light-theme .code-pill--action:hover { background: rgb(0 0 0 / 0.04); borde
 body.light-theme .marquee-band__item { color: rgb(0 0 0 / 0.06); }
 body.light-theme .marquee-band__item:hover { color: #0a0a0a; }
 
-/* ——— Liquid glass (contact channels) ——— */
+/* --- Liquid glass (contact channels) --- */
 .liquid-glass {
   --lg-fill: rgb(255 255 255 / 0.32);
   --lg-edge: rgb(255 255 255 / 0.7);
@@ -771,7 +771,7 @@ body.dark-theme .liquid-glass {
   transform: translateY(-1px);
 }
 
-/* ——— Reveal / page ——— */
+/* --- Reveal / page --- */
 .reveal {
   --reveal-delay: 0ms;
   --reveal-stagger: 100ms;

@@ -54,7 +54,7 @@ export function useLampScene(canvasRef) {
     stack: ['Vue.js', 'Node.js', 'OpenAI API', 'Firebase'],
     image: '/assets/product-comparator-demo.gif',
     description:
-      'Personal project — paste product URLs, answer a few questions, get an AI side-by-side comparison. Vue 3 frontend, Node scraper, Firebase auth. Runs locally; setup in the repo.',
+      'Personal project - paste product URLs, answer a few questions, get an AI side-by-side comparison. Vue 3 frontend, Node scraper, Firebase auth. Runs locally; setup in the repo.',
     year: '2025',
     slug: null,
     repo: 'https://github.com/lukka117/comparator',
