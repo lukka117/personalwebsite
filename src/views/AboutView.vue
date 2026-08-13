@@ -1,5 +1,6 @@
 <script setup>
 import { aboutCopy } from '@/data/profile'
+import { assetUrl } from '@/utils/assetUrl'
 </script>
 
 <template>
@@ -13,7 +14,7 @@ import { aboutCopy } from '@/data/profile'
                 <div class="about-media">
                   <img
                     class="media-style-2"
-                    src="/assets/me.webp"
+                    :src="assetUrl('assets/me.webp')"
                     alt="lukkafz portrait"
                   />
                 </div>
@@ -52,7 +53,7 @@ import { aboutCopy } from '@/data/profile'
         >
           <div class="right-text-container">
             <div class="about-media">
-              <img class="media-style-2" src="/assets/solary/solary3.gif" alt="Solary visual still" />
+              <img class="media-style-2" :src="assetUrl('assets/solary/solary3.gif')" alt="Solary visual still" />
             </div>
           </div>
         </div>
@@ -76,7 +77,7 @@ import { aboutCopy } from '@/data/profile'
             <div class="media-style-container">
               <div class="media-text-container">
                 <div class="about-media">
-                  <img class="media-style-2" src="/assets/monster1.webp" alt="Campaign still" />
+                  <img class="media-style-2" :src="assetUrl('assets/monster1.webp')" alt="Campaign still" />
                 </div>
               </div>
             </div>

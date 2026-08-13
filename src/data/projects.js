@@ -1,3 +1,5 @@
+import { assetUrl } from '@/utils/assetUrl'
+
 /**
  * Code / product projects.
  */
@@ -6,7 +8,7 @@ export const projects = [
     id: '01',
     title: 'Solary - Philips concept landing',
     stack: ['React', 'Three.js', 'JSX'],
-    image: '/assets/solary/solarywebsite.gif',
+    image: assetUrl('assets/solary/solarywebsite.gif'),
     description:
       'Landing for a fictional Philips wall lamp. Cinema 4D model in Three.js, React UI, scroll-linked camera.',
     year: '2025',
@@ -20,7 +22,7 @@ export const projects = [
     id: '02',
     title: 'Product Comparator',
     stack: ['Vue.js', 'Node.js', 'OpenAI API', 'Firebase'],
-    image: '/assets/product-comparator-demo.gif',
+    image: assetUrl('assets/product-comparator-demo.gif'),
     description:
       'Personal project - paste product URLs, answer a few questions, get an AI side-by-side comparison. Vue 3 frontend, Node scraper, Firebase auth. Runs locally; setup in the repo.',
     year: '2025',
@@ -55,23 +57,23 @@ export const creativeWorks = [
     category: '3D modelling',
     year: '2024',
     description: 'Fictional Philips wall lamp - Cinema 4D model and product views.',
-    image: '/assets/solary/finale-frames/solary-packaging1.jpg',
+    image: assetUrl('assets/solary/finale-frames/solary-packaging1.jpg'),
     featured: true,
     hero: {
       type: 'video',
-      src: '/assets/solary/solaryanimation.mp4',
-      poster: '/assets/solary/11.jpg',
+      src: assetUrl('assets/solary/solaryanimation.mp4'),
+      poster: assetUrl('assets/solary/11.jpg'),
     },
     gallery: [
-      { src: '/assets/solary/finale-frames/12.png', caption: 'One view after the other' },
-      { src: '/assets/solary/finale-frames/7.png', caption: 'One view after the other' },
-      { src: '/assets/solary/finale-frames/9.png', caption: 'One view after the other' },
-      { src: '/assets/solary/finale-frames/8.png', caption: 'One view after the other' },
-      { src: '/assets/solary/finale-frames/5.png', caption: 'One view after the other' },
-      { src: '/assets/solary/finale-frames/4.png', caption: 'One view after the other' },
-      { src: '/assets/solary/finale-frames/3.png', caption: 'One view after the other' },
-      { src: '/assets/solary/finale-frames/2.png', caption: 'One view after the other' },
-      { src: '/assets/solary/finale-frames/10.png', caption: 'One view after the other' },
+      { src: assetUrl('assets/solary/finale-frames/12.png'), caption: 'One view after the other' },
+      { src: assetUrl('assets/solary/finale-frames/7.png'), caption: 'One view after the other' },
+      { src: assetUrl('assets/solary/finale-frames/9.png'), caption: 'One view after the other' },
+      { src: assetUrl('assets/solary/finale-frames/8.png'), caption: 'One view after the other' },
+      { src: assetUrl('assets/solary/finale-frames/5.png'), caption: 'One view after the other' },
+      { src: assetUrl('assets/solary/finale-frames/4.png'), caption: 'One view after the other' },
+      { src: assetUrl('assets/solary/finale-frames/3.png'), caption: 'One view after the other' },
+      { src: assetUrl('assets/solary/finale-frames/2.png'), caption: 'One view after the other' },
+      { src: assetUrl('assets/solary/finale-frames/10.png'), caption: 'One view after the other' },
     ],
   },
   {
@@ -81,18 +83,18 @@ export const creativeWorks = [
     category: 'Branding',
     year: '2024',
     description: 'Brand system, mark, and stationery.',
-    image: '/assets/kapterid/stationarykhapter.webp',
+    image: assetUrl('assets/kapterid/stationarykhapter.webp'),
     featured: true,
     hero: {
       type: 'image',
-      src: '/assets/kapterid/SequenceKapter.gif',
+      src: assetUrl('assets/kapterid/SequenceKapter.gif'),
     },
     gallery: [
-      { src: '/assets/kapterid/kapter.jpg', caption: 'Khapter Big Board' },
-      { src: '/assets/kapterid/kapter16.jpg', caption: 'A lovely intro' },
-      { src: '/assets/kapterid/stationarykhapter.webp', caption: 'The stationary they need' },
-      { src: '/assets/kapterid/kapter15.webp', caption: 'The process acts' },
-      { src: '/assets/kapterid/kapter14.webp', caption: 'The mark strikes' },
+      { src: assetUrl('assets/kapterid/kapter.jpg'), caption: 'Khapter Big Board' },
+      { src: assetUrl('assets/kapterid/kapter16.jpg'), caption: 'A lovely intro' },
+      { src: assetUrl('assets/kapterid/stationarykhapter.webp'), caption: 'The stationary they need' },
+      { src: assetUrl('assets/kapterid/kapter15.webp'), caption: 'The process acts' },
+      { src: assetUrl('assets/kapterid/kapter14.webp'), caption: 'The mark strikes' },
     ],
   },
   {
@@ -102,17 +104,17 @@ export const creativeWorks = [
     category: 'Campaign visual',
     year: '2023',
     description: 'Campaign still and motion for a Monster Energy treatment.',
-    image: '/assets/monster1.webp',
+    image: assetUrl('assets/monster1.webp'),
     featured: true,
     hero: {
       type: 'video',
-      src: '/assets/monster%20energy%20animation.mp4',
-      poster: '/assets/monster1.webp',
+      src: assetUrl('assets/monster energy animation.mp4'),
+      poster: assetUrl('assets/monster1.webp'),
     },
     gallery: [
-      { src: '/assets/monsterenergy.gif', caption: 'Motion' },
-      { src: '/assets/monster.png', caption: 'Key visual' },
-      { src: '/assets/monster1.webp', caption: 'Still' },
+      { src: assetUrl('assets/monsterenergy.gif'), caption: 'Motion' },
+      { src: assetUrl('assets/monster.png'), caption: 'Key visual' },
+      { src: assetUrl('assets/monster1.webp'), caption: 'Still' },
     ],
   },
 ]
