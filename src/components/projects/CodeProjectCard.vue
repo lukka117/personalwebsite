@@ -17,7 +17,13 @@ defineProps({
       <span class="code-card__id">{{ String(index + 1).padStart(2, '0') }}</span>
       <span class="code-card__year">{{ project.year }}</span>
       <span class="code-card__status" :data-status="project.status">
-        {{ project.status === 'live' ? 'live' : 'soon' }}
+        {{
+          project.status === 'live'
+            ? 'live'
+            : project.status === 'local'
+              ? 'local'
+              : 'soon'
+        }}
       </span>
     </header>
 
@@ -31,25 +37,29 @@ defineProps({
         <div class="code-card__actions">
           <a
             v-if="project.demo"
-            class="code-pill code-pill--action"
+            class="liquid-glass liquid-glass--pill code-card__glass-btn"
             :href="project.demo"
             target="_blank"
             rel="noopener noreferrer"
-          >Demo</a>
+          >
+            Visit site
+          </a>
           <a
             v-if="project.repo"
-            class="code-pill code-pill--action"
+            class="liquid-glass liquid-glass--pill code-card__glass-btn"
+            :class="{ 'code-card__glass-btn--secondary': project.demo }"
             :href="project.repo"
             target="_blank"
             rel="noopener noreferrer"
-          >Repo</a>
+          >
+            {{ project.demo ? 'Repo' : 'View repo' }}
+          </a>
           <span v-if="!project.demo && !project.repo" class="code-card__hint">
             No links yet
           </span>
         </div>
       </div>
 
-      <!-- Image panel — falls back to a tinted placeholder if no image set -->
       <div class="code-card__preview">
         <img
           v-if="project.image"

@@ -1,30 +1,23 @@
 /**
- * Social links — LinkedIn first.
- * Replace `href` / `handle` with your real profiles.
+ * Contact links — LinkedIn, GitHub, email.
  */
 export const socials = [
   {
     id: 'linkedin',
     label: 'LinkedIn',
     handle: 'lukkafz',
-    href: '#', // TODO: LinkedIn URL
+    href: 'https://www.linkedin.com/in/lukkafz',
   },
   {
-    id: 'instagram',
-    label: 'Instagram',
-    handle: '@lukkafz',
-    href: '#', // TODO: Instagram URL
-  },
-  {
-    id: 'behance',
-    label: 'Behance',
-    handle: 'lukkafz',
-    href: '#', // TODO: Behance URL
+    id: 'github',
+    label: 'GitHub',
+    handle: 'lukka117',
+    href: 'https://github.com/lukka117',
   },
   {
     id: 'email',
     label: 'Email',
     handle: 'hello@lukkafz.com',
-    href: 'mailto:hello@lukkafz.com', // TODO: email address
+    href: 'mailto:hello@lukkafz.com',
   },
 ]

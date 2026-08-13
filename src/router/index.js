@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import { getCreativeWorkBySlug } from '@/data/projects'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,6 +27,12 @@ const router = createRouter({
       meta: { title: 'Projects' },
     },
     {
+      path: '/projects/:slug',
+      name: 'work-detail',
+      component: () => import('@/views/WorkDetailView.vue'),
+      meta: { title: 'Project' },
+    },
+    {
       path: '/contact',
       name: 'contact',
       component: () => import('@/views/ContactView.vue'),
@@ -39,6 +46,11 @@ const router = createRouter({
 })
 
 router.afterEach((to) => {
+  if (to.name === 'work-detail') {
+    const work = getCreativeWorkBySlug(to.params.slug)
+    document.title = work ? `${work.title} - lukkafz` : 'Project - lukkafz'
+    return
+  }
   document.title = to.meta.title
     ? `${to.meta.title} - lukkafz`
     : 'lukkafz - Junior Frontend Developer'

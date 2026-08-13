@@ -6,13 +6,13 @@ export const projects = [
     id: '01',
     title: 'Solary - Philips concept landing',
     stack: ['React', 'Three.js', 'JSX'],
-    image: '/assets/solary/finale-frames/solary-packaging1.jpg',
+    image: '/assets/solary/solarywebsite.gif',
     description:
       'Landing for a fictional Philips wall lamp. Cinema 4D model in Three.js, React UI, scroll-linked camera.',
     year: '2025',
     slug: null,
     repo: null,
-    demo: null,
+    demo: 'https://lukka117.github.io/solary-web/',
     status: 'live',
     featured: true,
     snippet: `import { useEffect, useRef } from 'react'
@@ -51,15 +51,15 @@ export function useLampScene(canvasRef) {
   {
     id: '02',
     title: 'Product Comparator',
-    stack: ['Vue.js', 'JavaScript', 'OpenAI API'],
-    image: '/assets/gradient.webp',
+    stack: ['Vue.js', 'Node.js', 'OpenAI API', 'Firebase'],
+    image: '/assets/product-comparator-demo.gif',
     description:
-      'Paste up to 5 product URLs and get a side-by-side comparison (materials, colors, price, etc.) via o4-mini. Vue 3, OpenAI API, no backend.',
+      'Personal project — paste product URLs, answer a few questions, get an AI side-by-side comparison. Vue 3 frontend, Node scraper, Firebase auth. Runs locally; setup in the repo.',
     year: '2025',
     slug: null,
-    repo: null,
+    repo: 'https://github.com/lukka117/comparator',
     demo: null,
-    status: 'live',
+    status: 'local',
     featured: true,
     snippet: `// composables/useComparator.js
 import { ref } from 'vue'
@@ -127,48 +127,70 @@ const ready = true
 export const creativeWorks = [
   {
     id: 'cw-01',
-    title: 'Solary',
-    category: 'Brand & packaging',
+    slug: 'solary',
+    title: 'Philips Solary',
+    category: '3D modelling',
     year: '2024',
-    description: 'Identity and packaging for a fictional product line.',
+    description: 'Fictional Philips wall lamp - Cinema 4D model and product views.',
     image: '/assets/solary/finale-frames/solary-packaging1.jpg',
     featured: true,
+    hero: {
+      type: 'video',
+      src: '/assets/solary/solaryanimation.mp4',
+      poster: '/assets/solary/11.jpg',
+    },
+    gallery: [
+      { src: '/assets/solary/finale-frames/12.png', caption: 'One view after the other' },
+      { src: '/assets/solary/finale-frames/7.png', caption: 'One view after the other' },
+      { src: '/assets/solary/finale-frames/9.png', caption: 'One view after the other' },
+      { src: '/assets/solary/finale-frames/8.png', caption: 'One view after the other' },
+      { src: '/assets/solary/finale-frames/5.png', caption: 'One view after the other' },
+      { src: '/assets/solary/finale-frames/4.png', caption: 'One view after the other' },
+      { src: '/assets/solary/finale-frames/3.png', caption: 'One view after the other' },
+      { src: '/assets/solary/finale-frames/2.png', caption: 'One view after the other' },
+      { src: '/assets/solary/finale-frames/10.png', caption: 'One view after the other' },
+    ],
   },
   {
     id: 'cw-02',
-    title: 'Kapterid',
-    category: 'Motion & identity',
+    slug: 'khapter-industries',
+    title: 'Khapter Industries',
+    category: 'Branding',
     year: '2024',
-    description: 'Concept branding with motion frames.',
+    description: 'Brand system, mark, and stationery.',
     image: '/assets/kapterid/stationarykhapter.webp',
     featured: true,
-  },
-  {
-    id: 'cw-03',
-    title: 'The Stranding',
-    category: 'Film stills',
-    year: '2023',
-    description: 'Stills from a short video edit.',
-    image: '/assets/thestrandingimg.jpg',
-    featured: true,
+    hero: {
+      type: 'image',
+      src: '/assets/kapterid/SequenceKapter.gif',
+    },
+    gallery: [
+      { src: '/assets/kapterid/kapter.jpg', caption: 'Khapter Big Board' },
+      { src: '/assets/kapterid/kapter16.jpg', caption: 'A lovely intro' },
+      { src: '/assets/kapterid/stationarykhapter.webp', caption: 'The stationary they need' },
+      { src: '/assets/kapterid/kapter15.webp', caption: 'The process acts' },
+      { src: '/assets/kapterid/kapter14.webp', caption: 'The mark strikes' },
+    ],
   },
   {
     id: 'cw-04',
-    title: 'Monster',
+    slug: 'monster-energy',
+    title: 'Monster Energy',
     category: 'Campaign visual',
     year: '2023',
-    description: 'Campaign still for an energy brand treatment.',
+    description: 'Campaign still and motion for a Monster Energy treatment.',
     image: '/assets/monster1.webp',
-    featured: false,
-  },
-  {
-    id: 'cw-05',
-    title: 'Cudi Cast',
-    category: 'Editorial / motion',
-    year: '2023',
-    description: 'Editorial stills and motion for a music series.',
-    image: '/assets/cudi1.webp',
-    featured: false,
+    featured: true,
+    hero: {
+      type: 'video',
+      src: '/assets/monster%20energy%20animation.mp4',
+      poster: '/assets/monster1.webp',
+    },
+    gallery: [
+      { src: '/assets/monsterenergy.gif', caption: 'Motion' },
+      { src: '/assets/monster.png', caption: 'Key visual' },
+      { src: '/assets/monster1.webp', caption: 'Still' },
+    ],
   },
 ]
 
@@ -192,4 +214,7 @@ export const methodologyItems = [
 
 export const featuredHomeProjects = projects.filter((p) => p.featured)
 export const featuredCreativeWorks = creativeWorks.filter((w) => w.featured)
+export function getCreativeWorkBySlug(slug) {
+  return creativeWorks.find((w) => w.slug === slug)
+}
 export const projectsByYear = {}
