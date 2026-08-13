@@ -5,8 +5,8 @@ export const socials = [
   {
     id: 'linkedin',
     label: 'LinkedIn',
-    handle: 'www.linkedin.com/lucafrezzato',
-    href: 'https://www.linkedin.com/in/lukkafz',
+    handle: 'lucafrezzato',
+    href: 'https://www.linkedin.com/in/lucafrezzato/',
   },
   {
     id: 'github',
