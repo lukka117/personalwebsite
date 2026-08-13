@@ -11,7 +11,7 @@ export const projects = [
     image: assetUrl('assets/solary/solarywebsite.gif'),
     description:
       'Landing for a fictional Philips wall lamp. Cinema 4D model in Three.js, React UI, scroll-linked camera.',
-    year: '2025',
+    year: 'May 2026',
     slug: null,
     repo: null,
     demo: 'https://lukka117.github.io/solary-web/',
@@ -25,7 +25,7 @@ export const projects = [
     image: assetUrl('assets/product-comparator-demo.gif'),
     description:
       'Personal project - paste product URLs, answer a few questions, get an AI side-by-side comparison. Vue 3 frontend, Node scraper, Firebase auth. Runs locally; setup in the repo.',
-    year: '2025',
+    year: 'June 2026',
     slug: null,
     repo: 'https://github.com/lukka117/comparator',
     demo: null,
